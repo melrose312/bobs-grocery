@@ -18,6 +18,9 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  padding: 0 32px;
+}
 /* NAVIGATION BAR */
 
 nav {
@@ -56,9 +59,11 @@ nav {
   gap: 10px;
 }
 
+
 .logo__text--wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 8px;
 }
 
 .nav__icon {
@@ -66,9 +71,13 @@ nav {
   align-items: center;
   justify-content: center;
   color: #fa891a;
+  background-color: solid green;
   font-size: 24px;
   position: relative;
   margin-left: 8px;
+  border: 1px solid green;
+  padding: 12px;
+  border-radius: 50%;
 }
 
 ul {
@@ -77,4 +86,82 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+/* HEADER aka HERO */
+
+#header {
+  background-color: #2d5a27;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.header__description {
+  flex: 1;
+  color: white;
+  
+}
+
+.header__tagline  {
+  padding: 10px;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 1.2;
+  
+}
+
+.header__para {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.orange {
+  color: #e07b53;
+  font-weight: bold;
+}
+
+.header__img--wrapper {
+  flex: 1;
+}
+
+.header__img--wrapper img {
+  width: 100%;
+  padding: 32px 0px;
+  border-radius: 15%;
+}
+
+/* HEADER BUTTONS */
+.header__buttons {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.header__buttons button:first-child {
+  background-color: #e87722;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header__buttons button:last-child {
+  background-color: white;
+  color: green;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
 }

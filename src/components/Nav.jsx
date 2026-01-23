@@ -10,9 +10,10 @@ function Nav() {
           <Link>
             <FontAwesomeIcon icon={faCarrot} className="nav__icon" />
           </Link>
+
           <div className="logo__text--wrapper">
             <h2 className="logo__text">Bob's Grocery</h2>
-            <p>Fresh & Local Since 1958</p>
+            <p className="logo__tagline">Fresh & Local Since 1958</p>
           </div>
         </div>
 
