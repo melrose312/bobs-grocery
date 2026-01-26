@@ -13,7 +13,6 @@ function App() {
         <Nav />
         <Header />
         <Highlights />
-        <Highlight />
       </div>
     </Router>
   );

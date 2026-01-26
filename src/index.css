@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .App {
@@ -24,26 +24,26 @@ section {
 /* NAVIGATION BAR */
 
 nav {
-    height: 80px;
-    display: flex;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-    background-color: white;
-    position: relative;
+  height: 80px;
+  display: flex;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+  background-color: white;
+  position: relative;
 }
 
 .nav__container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .nav__link {
-    text-decoration: none;
-    font-size: 20px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .nav__list {
@@ -58,7 +58,6 @@ nav {
   align-items: center;
   gap: 10px;
 }
-
 
 .logo__text--wrapper {
   display: flex;
@@ -106,16 +105,14 @@ li {
 .header__description {
   flex: 1;
   color: white;
-  
 }
 
-.header__tagline  {
+.header__tagline {
   padding: 10px;
   font-size: 48px;
   font-weight: bold;
   padding: 10px;
   line-height: 1.2;
-  
 }
 
 .header__para {
@@ -140,33 +137,47 @@ li {
 }
 
 /* HEADER BUTTONS */
+
 .header__buttons {
   display: flex;
   gap: 16px;
-  padding: 16px;
 }
 
 .header__buttons button:first-child {
   background-color: #e87722;
   color: white;
   border: none;
-  padding: 12px 28px;
+  padding: 16px 32px;
   border-radius: 25px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header__buttons button:first-child:hover {
+  background-color: #d96a1a;
+  transform: translateY(-2px);
 }
 
 .header__buttons button:last-child {
   background-color: white;
   color: green;
   border: none;
-  padding: 12px 28px;
+  padding: 16px 32px;
   border-radius: 25px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-/* Highlights aka Fresh Picks */
+.header__buttons button:last-child:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* HIGHLIGHTS aka FRESH PICKS */
 
 .highlights {
   background-color: #f5f3ef;
@@ -196,7 +207,7 @@ li {
 .highlights__showcase {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 56px;
 }
 
 .highlight__card {
@@ -211,9 +222,15 @@ li {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-
+.highlight__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 .highlight__card img {
   position: absolute;
@@ -243,6 +260,3 @@ li {
   z-index: 2;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-
-
-
