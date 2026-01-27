@@ -22,7 +22,7 @@ function About() {
       <section id="story">
         <div className="story__container">
           <figure className="story__img--wrapper">
-            <img src={BobsImg} alt="Historical photo of Bob's Grocery in the early days" />
+            <img src={BobsImg} />
           </figure>
           <div className="story__content">
             <h2 className="story__title">From Humble Beginnings</h2>
