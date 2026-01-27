@@ -1,6 +1,11 @@
 import Nav from "../components/Nav";
 import Values from "../components/Values";
-import BobsImg from "../assets/Bob's Vintage Storefront.jpg"
+import BobsImg from "../assets/Bob's Vintage Storefront.jpg";
+import CommunityImg from "../assets/grocery team volunteering at a community event.jpg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSchool, faPersonRunning, faHeart, faFutbol } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../components/Footer";
+
 
 function About() {
   return (
@@ -52,6 +57,25 @@ function About() {
           <cite className="quote__cited">-Bob Thompson, Founder</cite>
         </div>
       </section>
+      <section id="community">
+        <div className="community__container">
+          <div className="community__content">
+            <h2 className="community__title">Rooted in Community</h2>
+            <p className="community__para">At Bob's, we believe that a strong community is built one connection at a time. That's why we've always made it our priority to be more than just a place to shop.</p>
+            <p className="community__para">Over the years, we've proudly supported numerous local initiatives:</p>
+            <ul className="community__list">
+              <li><FontAwesomeIcon icon={faSchool} /> School breakfast programs and fundraisers</li>
+              <li><FontAwesomeIcon icon={faPersonRunning} /> Local 5K runs and community wellness events</li>
+              <li><FontAwesomeIcon icon={faHeart} /> Monthly donations to the regional food bank</li>
+              <li><FontAwesomeIcon icon={faFutbol} /> Youth sports team sponsorships</li>
+            </ul>
+          </div>
+          <figure className="community__image--wrapper">
+            <img className="community__image" src={CommunityImg} alt="Bob's Grocery team" />
+          </figure>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 }
