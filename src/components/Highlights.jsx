@@ -5,7 +5,7 @@ import DeliImg from "../assets/quality-deli.jpg";
 
 function Highlights() {
   return (
-    <section className="highlights">
+    <section id="highlights">
       <div className="highlights__container">
         <h2>Fresh Picks of the Day</h2>
         <p className="highlights__para">

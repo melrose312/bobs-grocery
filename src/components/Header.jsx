@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <section id="header">
@@ -13,8 +15,8 @@ function Header() {
               local goods, and warm smiles for over 60 years.
             </p>
             <div className="header__buttons">
-              <button>Our Story</button>
-              <button>Visit Us</button>
+              <Link to="/about"><button className="btn__our-story">Our Story</button></Link>
+              <button className="btn__visit-us">Visit Us</button>
             </div>
           </div>
         </div>

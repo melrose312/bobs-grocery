@@ -1,7 +1,6 @@
 import Nav from "../components/Nav";
+import Values from "../components/Values";
 import BobsImg from "../assets/Bob's Vintage Storefront.jpg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLeaf, faUsers, faMedal } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
@@ -25,7 +24,7 @@ function About() {
             <p className="story__para">
               What started as a small corner store with a big dream has grown
               into a beloved community landmark. Bob Thompson opened the doors
-              of Bob's Small Time Grocery nearly 40 years ago with a simple
+              of Bob's Small Time Grocery nearly 70 years ago with a simple
               mission: to provide his neighbors with the freshest groceries and
               the friendliest service in town.
             </p>
@@ -46,25 +45,11 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="values">
-        <h2 className="values__heading">Our Mission & Values</h2>
-        <p className="values__para">These core principles guide everything we do, from selecting products to serving our customers.</p>
-        <div className="values__container">
-          <div className="value__card">
-            <FontAwesomeIcon icon={faLeaf} className="value__icon" />
-            <h3 className="value__title">Fresh & Local</h3>
-            <p className="value__subtitle">We partner with local farmers and suppliers to bring you the freshest produce and products. When you shop here, you're supporting your local community.</p>
-          </div>
-          <div className="value__card">
-            <FontAwesomeIcon icon={faUsers} className="value__icon" />
-            <h3 className="value__title">Community First</h3>
-            <p className="value__subtitle">We believe in giving back. From sponsoring little league teams to donating to food banks, we're invested in making our neighborhood stronger</p>
-          </div>
-          <div className="value__card">
-            <FontAwesomeIcon icon={faMedal} className="value__icon" />
-            <h3 className="value__title">Quality Always</h3>
-            <p className="value__subtitle">Every product on our shelves meets our high standards. We personally stand behind everything we sell because your trust means everything to us.</p>
-          </div>
+      <Values />
+      <section id="quote">
+        <div className="quote__container">
+          <blockquote className="blockquote">"A grocery store isn't just about selling food — it's about feeding families, building relationships, and nurturing a community. That's what we've always believed."</blockquote>
+          <cite className="quote__cited">-Bob Thompson, Founder</cite>
         </div>
       </section>
     </>

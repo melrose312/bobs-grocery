@@ -167,7 +167,7 @@ li {
   gap: 16px;
 }
 
-.header__buttons button:first-child {
+.btn__our-story {
   background-color: #e87722;
   color: white;
   border: none;
@@ -179,12 +179,12 @@ li {
   transition: all 0.2s ease;
 }
 
-.header__buttons button:first-child:hover {
+.btn__our-story:hover {
   background-color: #d96a1a;
   transform: translateY(-2px);
 }
 
-.header__buttons button:last-child {
+.btn__visit-us {
   background-color: white;
   color: green;
   border: none;
@@ -196,14 +196,14 @@ li {
   transition: all 0.2s ease;
 }
 
-.header__buttons button:last-child:hover {
+.btn__visit-us:hover {
   background-color: #f0f0f0;
   transform: translateY(-2px);
 }
 
 /* HIGHLIGHTS aka FRESH PICKS */
 
-.highlights {
+#highlights {
   background-color: #f5f3ef;
   padding: 60px 32px;
 }
@@ -490,8 +490,8 @@ li {
 /* ABOUT PAGE aka OUR STORY HEADER */
 
 #about {
-  background-color: #2d5a27;
-  padding: 80px 32px;
+  background: linear-gradient(180deg, #407a38 0%, #2d5a27 100%);
+  padding: 50px 32px;
 }
 
 .about__container {
@@ -572,7 +572,7 @@ li {
 
 /* VALUES SECTION */
 
-.values {
+#values {
   background-color: #ffffff;
   padding: 80px 32px;
 }
@@ -635,5 +635,33 @@ li {
   font-weight: bold;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+/* BOB's QUOTE */
+
+#quote {
+  background: linear-gradient(180deg, #407a38 0%, #2d5a27 100%);
+  padding: 50px 32px;
+}
+
+.quote__container {
+  color: #2d5a27;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blockquote {
+  color: #ffffff;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.quote__cited {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  
 }
 
