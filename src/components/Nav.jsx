@@ -7,7 +7,7 @@ function Nav() {
     <nav>
       <div className="nav__container">
         <div className="logo__wrapper">
-          <Link>
+          <Link to="/">
             <FontAwesomeIcon icon={faCarrot} className="nav__icon" />
           </Link>
 
@@ -24,12 +24,12 @@ function Nav() {
             </Link>
           </li>
           <li className="nav__list">
-            <Link to="/" className="nav__link">
+            <Link to="/about" className="nav__link">
               About
             </Link>
           </li>
           <li className="nav__list">
-            <Link to="/" className="nav__link">
+            <Link to="/contact" className="nav__link">
               Contact
             </Link>
           </li>

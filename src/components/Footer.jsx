@@ -9,12 +9,12 @@ function Footer() {
                 <div className="footer__column footer__brand">
                     <div className="footer__logo">
                         <FontAwesomeIcon icon={faCarrot} className="footer__icon" />
-                        <div className="footer__logo-text">
+                        <div className="footer__logo--text">
                             <h3>Bob's Grocery</h3>
                             <span>Fresh & Local Since 1958</span>
                         </div>
                     </div>
-                    <p className="footer__description">
+                    <p className="footer__description--para">
                         Your trusted neighborhood grocery store, serving the community with fresh produce, quality goods, and friendly service since 1958.
                     </p>
                 </div>

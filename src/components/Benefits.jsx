@@ -6,7 +6,7 @@ function Benefits() {
         <section className="benefits">
             <div className="benefits__container">
                 <h2>Why Shop With Us?</h2>
-                <div className="benefits__grid">
+                <div className="benefits__items">
                     <div className="benefit__card">
                         <FontAwesomeIcon icon={faLeaf} className="benefit__icon" />
                         <h3 className="benefit__title">Locally Sourced</h3>

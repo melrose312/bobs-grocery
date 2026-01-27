@@ -114,21 +114,29 @@ li {
 /* HEADER aka HERO */
 
 #header {
-  background-color: #2d5a27;
+  background-image: linear-gradient(rgba(45, 90, 39, 0.75), rgba(45, 90, 39, 0.75)), url('./assets/bunch-of-vegetables-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
+  padding: 80px 32px;
+  position: relative;
 }
 
 .header__description {
   flex: 1;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .header__tagline {
@@ -137,27 +145,19 @@ li {
   font-weight: bold;
   padding: 10px;
   line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .header__para {
   font-size: 24px;
   line-height: 1.6;
   margin: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .orange {
   color: #e07b53;
   font-weight: bold;
-}
-
-.header__img--wrapper {
-  flex: 1;
-}
-
-.header__img--wrapper img {
-  width: 100%;
-  padding: 32px 0px;
-  border-radius: 15%;
 }
 
 /* HEADER BUTTONS */
@@ -352,7 +352,7 @@ li {
   margin-bottom: 50px;
 }
 
-.benefits__grid {
+.benefits__items {
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -437,7 +437,7 @@ li {
   color: #aaa;
 }
 
-.footer__description {
+.footer__description--para {
   font-size: 16px;
   line-height: 1.6;
   color: #aaa;
@@ -486,3 +486,87 @@ li {
   font-size: 16px;
   color: #888;
 }
+
+/* ABOUT PAGE aka OUR STORY HEADER */
+
+#about {
+  background-color: #2d5a27;
+  padding: 80px 32px;
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__title {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.about__subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+}
+
+/* STORY SECTION */
+
+#story {
+  background-color: #fafafa;
+  padding: 100px 32px;
+}
+
+.story__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 80px;
+}
+
+.story__img--wrapper {
+  flex: 1.2;
+  min-height: 450px;
+  background-color: #e8e8e8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.story__img--wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.story__title {
+  color: #2d5a27;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  padding-left: 20px;
+  border-left: 4px solid #2d5a27;
+  line-height: 1.2;
+}
+
+.story__para {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.85;
+  margin-bottom: 24px;
+}
+

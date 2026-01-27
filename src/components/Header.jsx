@@ -1,5 +1,3 @@
-import HeaderImg from "../assets/bunch-of-vegetables-unsplash.jpg";
-
 function Header() {
   return (
     <section id="header">
@@ -19,9 +17,6 @@ function Header() {
               <button>Visit Us</button>
             </div>
           </div>
-            <figure className="header__img--wrapper">
-              <img src={HeaderImg} alt="" />
-            </figure>
         </div>
       </header>
     </section>
