@@ -5,9 +5,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCarrot } from "@fortawesome/free-solid-svg-icons";
+import { faCarrot, faExclamation } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faCarrot);
+library.add(faCarrot, faExclamation);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
