@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamation } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function PromoBanner() {
   return (
@@ -22,7 +23,7 @@ function PromoBanner() {
           Get 20% off all fresh produce this Saturday and Sunday! Stock up on
           healthy goodness for the whole family
         </p>
-        <button>Get Directions</button>
+        <Link to="/contact"><button>Get Directions</button></Link>
       </div>
     </section>
   );

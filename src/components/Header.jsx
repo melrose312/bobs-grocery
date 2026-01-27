@@ -16,7 +16,7 @@ function Header() {
             </p>
             <div className="header__buttons">
               <Link to="/about"><button className="btn__our-story">Our Story</button></Link>
-              <button className="btn__visit-us">Visit Us</button>
+              <Link to="/contact"><button className="btn__visit-us">Visit Us</button></Link>
             </div>
           </div>
         </div>

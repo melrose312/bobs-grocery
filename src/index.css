@@ -114,7 +114,9 @@ li {
 /* HEADER aka HERO */
 
 #header {
-  background-image: linear-gradient(rgba(45, 90, 39, 0.75), rgba(45, 90, 39, 0.75)), url('./assets/bunch-of-vegetables-unsplash.jpg');
+  background-image:
+    linear-gradient(rgba(45, 90, 39, 0.75), rgba(45, 90, 39, 0.75)),
+    url("./assets/bunch-of-vegetables-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,6 +211,7 @@ li {
 }
 
 .highlights__container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -290,10 +293,10 @@ li {
 .promo__container {
   background-color: #f5f3ef;
   padding: 60px 32px;
-  
 }
 
 .promo__banner {
+  width: 100%;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -341,6 +344,7 @@ li {
 }
 
 .benefits__container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -495,6 +499,7 @@ li {
 }
 
 .about__container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -523,6 +528,7 @@ li {
 }
 
 .story__container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -602,6 +608,7 @@ li {
 }
 
 .values__container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -644,6 +651,7 @@ li {
 }
 
 .quote__container {
+  width: 100%;
   color: #2d5a27;
   max-width: 800px;
   margin: 0 auto;
@@ -661,7 +669,6 @@ li {
 .quote__cited {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
-  
 }
 
 /* COMMUNITY SECTION */
@@ -672,6 +679,7 @@ li {
 }
 
 .community__container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -714,6 +722,7 @@ li {
   margin-bottom: 24px;
 }
 
+/* FontAwesome Icon Sizing Next to the List Items */
 .community__list li svg {
   color: #e87722;
   font-size: 24px;
@@ -733,6 +742,510 @@ li {
   object-fit: cover;
 }
 
+/* CONTACT PAGE HEADER */
 
+#contact {
+  background: linear-gradient(180deg, #407a38 0%, #2d5a27 100%);
+  padding: 50px 32px;
+}
 
+.contact__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.contact__title {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact__subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+}
+
+/* CONTACT INFO SECTION */
+
+#contact__info {
+  background-color: #fafafa;
+  padding: 80px 32px;
+}
+
+.contact__info--container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact__card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact__icon--wrapper {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #2d5a27;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__icon {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.contact__card--content {
+  flex: 1;
+}
+
+.contact__card--title {
+  color: #2d2d2d;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.contact__card--text {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 4px 0;
+}
+
+/* MAP SECTION */
+
+#map {
+  background-color: #ffffff;
+  padding: 80px 32px;
+}
+
+.map__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 80px 32px;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.map__icon {
+  font-size: 64px;
+  color: #2d5a27;
+  margin-bottom: 16px;
+}
+
+.map__subtitle {
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.map__address {
+  color: #666;
+  font-size: 16px;
+}
+
+/* DESKTOP RESPONSIVENESS */
+@media (max-width: 992px) {
+  /* NAVIGATION */
+  .nav__container {
+    padding: 0 20px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+  }
+
+  .nav__icon {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* HEADERS */
+  .header__container,
+  .about__container,
+  .contact__container {
+    flex-direction: column;
+    padding: 60px 24px;
+    gap: 30px;
+  }
+
+  /* HEADINGS  */
+  .header__tagline,
+  .about__title,
+  .contact__title {
+    font-size: 36px;
+  }
+
+  .header__para,
+  .about__subtitle,
+  .contact__subtitle,
+  .highlights__para,
+  .promo__para,
+  .values__para {
+    font-size: 20px;
+  }
+
+  .highlights h2,
+  .benefits h2,
+  .promo__headline,
+  .values__heading,
+  .story__title,
+  .community__title {
+    font-size: 32px;
+  }
+
+  /* MULTI-COLUMN LAYOUTS - Stack vertically */
+  .highlights__showcase,
+  .benefits__items,
+  .values__container,
+  .footer__container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  /* CARDS - Manage max width */
+  .highlight__card,
+  .benefit__card,
+  .value__card {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  /* STORY & COMMUNITY SECTIONS - Stack image and content */
+  .story__container,
+  .community__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .story__img--wrapper,
+  .community__image--wrapper {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* PROMO BANNER */
+  .promo__banner {
+    padding: 50px 24px;
+  }
+
+  /* FOOTER */
+  .footer__brand {
+    max-width: 100%;
+  }
+}
+
+/* TABLET RESPONSIVENESS */
+@media (max-width: 768px) {
+  /* SECTIONS */
+  section,
+  #highlights,
+  #story,
+  #values,
+  #quote,
+  #community,
+  #contact__info,
+  #map,
+  .benefits,
+  .footer,
+  .promo__container {
+    padding: 40px 20px;
+  }
+
+  .nav__container {
+    padding: 0 16px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
+
+  .nav__list {
+    gap: 8px;
+  }
+
+  .logo__wrapper {
+    gap: 6px;
+  }
+
+  .nav__icon {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  /* HEADERS */
+  .header__container,
+  .about__container,
+  .contact__container {
+    padding: 40px 20px;
+  }
+
+  .header__tagline,
+  .about__title,
+  .contact__title {
+    font-size: 28px;
+  }
+
+  .header__para,
+  .about__subtitle,
+  .contact__subtitle,
+  .highlights__para,
+  .promo__para,
+  .values__para {
+    font-size: 18px;
+  }
+
+  /* ALL H2 HEADINGS */
+  .highlights h2,
+  .benefits h2,
+  .promo__headline,
+  .values__heading,
+  .story__title,
+  .community__title {
+    font-size: 28px;
+  }
+
+  /* BUTTONS - Full width */
+  .header__buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .btn__our-story,
+  .btn__visit-us,
+  .promo__banner button {
+    width: 100%;
+    padding: 14px 24px;
+  }
+
+  /* CARDS & TEXT */
+  .highlight__card,
+  .benefit__card,
+  .value__card {
+    max-width: 100%;
+    padding: 20px;
+    min-height: 240px;
+  }
+
+  .highlight__title,
+  .benefit__title,
+  .value__title {
+    font-size: 20px;
+  }
+
+  .highlight__subtitle,
+  .benefit__subtitle,
+  .value__subtitle,
+  .story__para,
+  .community__para {
+    font-size: 16px;
+  }
+
+  .benefit__icon,
+  .value__icon {
+    font-size: 40px;
+  }
+
+  /* FOOTER  */
+  .footer__container {
+    gap: 32px;
+  }
+
+  .footer__icon {
+    font-size: 28px;
+  }
+
+  .footer__logo-text h3,
+  .footer__heading {
+    font-size: 16px;
+  }
+
+  .footer__description--para,
+  .footer__links li,
+  .footer__hours li,
+  .footer__copyright p,
+  .contact__card--text {
+    font-size: 14px;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 576px) {
+  /* SECTIONS */
+  section,
+  #highlights,
+  #story,
+  #values,
+  #quote,
+  #community,
+  #contact__info,
+  #map,
+  .benefits,
+  .footer,
+  .promo__container {
+    padding: 30px 16px;
+  }
+
+  /* NAVIGATION */
+  nav {
+    height: 70px;
+  }
+
+  .nav__container {
+    padding: 0 12px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .nav__list {
+    gap: 6px;
+  }
+
+  .logo__wrapper {
+    gap: 4px;
+  }
+
+  .nav__icon {
+    font-size: 16px;
+    padding: 6px;
+    margin-left: 4px;
+  }
+
+  /* HEADERS */
+  .header__container,
+  .about__container,
+  .contact__container {
+    padding: 30px 16px;
+  }
+
+  .header__tagline,
+  .about__title,
+  .contact__title {
+    font-size: 24px;
+  }
+
+  .header__para,
+  .about__subtitle,
+  .contact__subtitle,
+  .highlights__para,
+  .promo__para,
+  .values__para,
+  .blockquote {
+    font-size: 16px;
+  }
+
+  /* ALL H2 HEADINGS */
+  .highlights h2,
+  .benefits h2,
+  .promo__headline,
+  .values__heading,
+  .story__title,
+  .community__title {
+    font-size: 24px;
+  }
+
+  /* BUTTONS*/
+  .btn__our-story,
+  .btn__visit-us,
+  .promo__banner button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  /* CARDS */
+  .highlight__card,
+  .benefit__card,
+  .value__card {
+    padding: 16px;
+    min-height: 200px;
+  }
+
+  .highlight__title,
+  .benefit__title,
+  .value__title {
+    font-size: 18px;
+  }
+
+  .highlight__subtitle,
+  .benefit__subtitle,
+  .value__subtitle,
+  .story__para,
+  .community__para,
+  .community__list li,
+  .quote__cited {
+    font-size: 14px;
+  }
+
+  .benefit__icon,
+  .value__icon {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  /* PROMO BANNER */
+  .promo__banner {
+    padding: 30px 16px;
+    border-radius: 8px;
+  }
+
+  /* FOOTER */
+  .footer__container {
+    gap: 24px;
+    padding-bottom: 30px;
+  }
+
+  .footer__icon {
+    font-size: 24px;
+  }
+
+  .footer__logo-text h3 {
+    font-size: 16px;
+  }
+
+  .footer__heading {
+    font-size: 14px;
+  }
+
+  .footer__description--para,
+  .footer__links li,
+  .footer__hours li {
+    font-size: 13px;
+  }
+
+  .footer__copyright p,
+  .contact__card--text {
+    font-size: 12px;
+  }
+}
