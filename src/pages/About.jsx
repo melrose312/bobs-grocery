@@ -1,5 +1,7 @@
 import Nav from "../components/Nav";
 import BobsImg from "../assets/Bob's Vintage Storefront.jpg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLeaf, faUsers, faMedal } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
@@ -41,6 +43,27 @@ function About() {
               continues to be the heart of our neighborhood, where quality
               products and genuine connections come together.
             </p>
+          </div>
+        </div>
+      </section>
+      <section className="values">
+        <h2 className="values__heading">Our Mission & Values</h2>
+        <p className="values__para">These core principles guide everything we do, from selecting products to serving our customers.</p>
+        <div className="values__container">
+          <div className="value__card">
+            <FontAwesomeIcon icon={faLeaf} className="value__icon" />
+            <h3 className="value__title">Fresh & Local</h3>
+            <p className="value__subtitle">We partner with local farmers and suppliers to bring you the freshest produce and products. When you shop here, you're supporting your local community.</p>
+          </div>
+          <div className="value__card">
+            <FontAwesomeIcon icon={faUsers} className="value__icon" />
+            <h3 className="value__title">Community First</h3>
+            <p className="value__subtitle">We believe in giving back. From sponsoring little league teams to donating to food banks, we're invested in making our neighborhood stronger</p>
+          </div>
+          <div className="value__card">
+            <FontAwesomeIcon icon={faMedal} className="value__icon" />
+            <h3 className="value__title">Quality Always</h3>
+            <p className="value__subtitle">Every product on our shelves meets our high standards. We personally stand behind everything we sell because your trust means everything to us.</p>
           </div>
         </div>
       </section>

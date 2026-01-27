@@ -526,13 +526,13 @@ li {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   gap: 80px;
 }
 
 .story__img--wrapper {
-  flex: 1.2;
-  min-height: 450px;
+  flex: 0 0 550px;
+  height: 520px;
   background-color: #e8e8e8;
   border-radius: 12px;
   overflow: hidden;
@@ -568,5 +568,72 @@ li {
   font-size: 18px;
   line-height: 1.85;
   margin-bottom: 24px;
+}
+
+/* VALUES SECTION */
+
+.values {
+  background-color: #ffffff;
+  padding: 80px 32px;
+}
+
+.values h2 {
+  color: #2d5a27;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.values__heading {
+  color: #2d5a27;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.values__para {
+  color: #666;
+  font-size: 24px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.values__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.value__card {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.value__icon {
+  font-size: 48px;
+  color: #e87722;
+  margin-bottom: 20px;
+}
+
+.value__title {
+  color: #2d5a27;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.value__subtitle {
+  color: #666;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
